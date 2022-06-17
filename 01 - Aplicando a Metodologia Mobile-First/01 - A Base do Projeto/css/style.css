@@ -1,0 +1,18 @@
+/*========== Configurations ==========*/
+:root {
+    --background: #ebecee;
+}
+
+/*========== Generic Elements ==========*/
+body {
+    background-color: var(--background);
+}
+
+/*========== Generic Classes ==========*/
+
+
+/*========== Page - Top to Bottom ==========*/
+
+
+/* RESPONSIVE LAYOUTS */
+/* TABLET */
