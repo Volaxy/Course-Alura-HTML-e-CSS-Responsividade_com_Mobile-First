@@ -13,14 +13,4 @@ URL do curso -> [HTML e CSS - Responsividade com Mobile-First](https://cursos.al
 ## Links Úteis &#x1F517;
 * [Layout do Projeto](https://www.figma.com/file/sSMbIqKaGBd66Y8roxTk2p/AluraBooks) - Protótipo do projeto disponibilizado no **Figma**.
 * [Imagens](https://caelum-online-public.s3.amazonaws.com/2529-html-css-responsividade-mobile-first/01/AluraBooks.zip) - Link para download das imagens que são necessárias para o projeto.
-
-## Siglas &#x1F5FA;
-*
-
-## Atalhos &#x2328;
-*
-
-***
-
-## 01 - Aplicando a Metodologia Mobile-First &#x1F516;
-* Criação do projeto.
+* [Swiper](https://swiperjs.com/) - Bibliotecas de códigos JS já feitos para utilização.
