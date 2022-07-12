@@ -143,11 +143,21 @@ a {
     justify-content: space-between;
 }
 
-    .header-menu__links {
+    .header-menu__hamburguer {
+        display: inline-block;
+
         margin-right: 1rem;
         margin-bottom: -.25rem;
         padding: 1rem;
+
+        fill: #002F52;
     }
+
+        .header-menu__hamburguer:hover {
+            background-image: var(--blue-linear-background);
+
+            fill: white;
+        }
 
         .header-menu__categories {
             position: absolute;
@@ -158,11 +168,7 @@ a {
             z-index: 2;
         }
 
-        .header-menu__links:hover {
-            background-image: var(--blue-linear-background);
-        }
-
-        .header-menu__links:hover + .header-menu__categories {
+        .header-menu__hamburguer:hover + .header-menu__categories {
             background-color: white;
             width: 60%;
             height: auto;
