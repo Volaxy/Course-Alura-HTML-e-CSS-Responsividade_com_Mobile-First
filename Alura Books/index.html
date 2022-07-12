@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Books</title>
+
+    <!-- EXTERNAL REFERENCES -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <!-- HEADER MENU -->
+        <nav class="header-menu">
+            <div>
+                <img class="header-menu__links" src="Images/Menu_Icon.svg" alt="Menu Hambûrguer">
+                
+                <nav class="header-menu__categories">
+                    <ul>
+                        <li class="header-menu__categories__item">
+                            <h2 class="header-menu__categories__tittle">Categorias</h2>
+                        </li>
+
+                        <li class="header-menu__categories__item">Programação</li>
+                        <li class="header-menu__categories__item">Front-End</li>
+                        <li class="header-menu__categories__item">Infraestrutura</li>
+                        <li class="header-menu__categories__item">Busines</li>
+                        <li class="header-menu__categories__item">Design & UX</li>
+                    </ul>
+                </nav>
+
+                <img class="header-menu__logo" src="Images/Logo_Icon.svg" alt="Logo do Alura Books">
+            </div>
+
+            <ul class="header-menu__actions">
+                <li class="header-menu__actions__item"><img src="Images/Favorites_Icon.svg" alt="ícone de favoritos"></li>
+                <li class="header-menu__actions__item"><img src="Images/Purchases_Icon.svg" alt="ícone de compras"></li>
+                <li class="header-menu__actions__item"><img src="Images/User_Icon.svg" alt="ícone de usuário"></li>
+            </ul>
+        </nav>
+
+        <!-- HEADER INTRODUCTION -->
+        <section class="header-intro">
+            <h2 class="header-intro__tittle">Já sabe por onde começar?</h2>
+            <p class="header-intro__text">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+
+            <input class="header-intro__input" type="text" placeholder="Qual será sua próxima leitura?">
+        </section>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- LAST RELEASES -->
+        <article class="last-releases">
+            <!-- LAST BOOKS -->
+            <section class="last-releases__last-books">
+                <h1 class="main-tittle">Últimos Lançamentos</h1>
+
+                <!-- CAROUSSEL -->
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img class="swiper-slide__img" src="Images/Book_1.png" alt="Book 1"></div>
+                        <div class="swiper-slide"><img class="swiper-slide__img" src="Images/Book_2.png" alt="Book 2"></div>
+                        <div class="swiper-slide"><img class="swiper-slide__img" src="Images/Book_3.png" alt="Book 3"></div>
+                        <div class="swiper-slide"><img class="swiper-slide__img" src="Images/Book_4.png" alt="Book 4"></div>
+                        <div class="swiper-slide"><img class="swiper-slide__img" src="Images/Book_5.png" alt="Book 5"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- INTERESTS -->
+            <section class="card--2columns">
+                <section class="card--2columns__left-col__texts">
+                    <h2 class="card--2columns__left-col__tittle">Talvez você também se interesse por...</h2>
+                    <h3 class="card--2columns__left-col__subtittle">Angular 11 e Firebase</h3>
+                    <p class="card--2columns__left-col__description">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                    
+                    <div class="card--2columns__left-col__icons">
+                        <img src="Images/Favorites_Icon.svg" alt="ícone de favoritos">
+                        <img src="Images/Purchases_Icon.svg" alt="ícone de compras">
+                    </div>
+                </section>
+
+                <aside class="card--2columns__right-col">
+                    <img src="Images/Angular.png" alt="Logo do Angular">
+                    <a class="card--2columns__right-col__link--button button-link--yellow" href="#">Saiba mais</a>
+                </aside>
+            </section>
+        </article>
+
+        <!-- BEST SELLERS -->
+        <article class="best-sellers">
+            <h1 class="main-tittle">Mais Vendidos</h1>
+
+            <!-- CAROUSSEL -->
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img class="swiper-slide__img" src="Images/Book_1.png" alt="Book 1"></div>
+                    <div class="swiper-slide"><img class="swiper-slide__img" src="Images/Book_2.png" alt="Book 2"></div>
+                    <div class="swiper-slide"><img class="swiper-slide__img" src="Images/Book_3.png" alt="Book 3"></div>
+                    <div class="swiper-slide"><img class="swiper-slide__img" src="Images/Book_4.png" alt="Book 4"></div>
+                    <div class="swiper-slide"><img class="swiper-slide__img" src="Images/Book_5.png" alt="Book 5"></div>
+                </div>
+            </div>
+        </article>
+
+        <!-- AUTHOR OF THE MONTH -->
+        <section class="card--2columns">
+            <section class="card--2columns__left-col__texts">
+                <p>
+                    <img src="Images/Star_Icon.svg" alt="Estrela">
+                    <img src="Images/Star_Icon.svg" alt="Estrela">
+                    <img src="Images/Star_Icon.svg" alt="Estrela">
+                    <img src="Images/Star_Icon.svg" alt="Estrela">
+                    <img src="Images/Star_Icon.svg" alt="Estrela">
+                </p>
+
+                <h2 class="card--2columns__left-col__tittle">Autora do Mês</h2>
+                <h3 class="card--2columns__left-col__subtittle">Juliana Agarikov</h3>
+                <p class="card--2columns__left-col__description">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+                
+                <div class="card--2columns__left-col__icons">
+                    <img src="Images/Favorites_Icon.svg" alt="ícone de favoritos">
+                    <img src="Images/Purchases_Icon.svg" alt="ícone de compras">
+                </div>
+            </section>
+
+            <aside class="card--2columns__right-col">
+                <img src="Images/Writer_Profile.png" alt="Logo do Angular">
+                <a class="card--2columns__right-col__link--button button-link--yellow" href="#">Saiba mais</a>
+            </aside>
+        </section>
+    </main>
+
+    <hr class="line--white">
+    
+    <!-- TOPICS RECENTLY VISITED -->
+    <aside class="topics">
+        <h2 class="topics__tittle">Tópicos Visitados Recentemente</h2>
+
+        <nav>
+            <ul class="topics__list">
+                <li><a class="topics__list__item button-link--yellow" href="#">Android</a></li>
+                <li><a class="topics__list__item button-link--yellow" href="#">Marketing Digital</a></li>
+                <li><a class="topics__list__item button-link--yellow" href="#">Agile</a></li>
+                <li><a class="topics__list__item button-link--yellow" href="#">Startups</a></li>
+                <li><a class="topics__list__item button-link--yellow" href="#">HTML & CSS</a></li>
+                <li><a class="topics__list__item button-link--yellow" href="#">Python</a></li>
+                <li><a class="topics__list__item button-link--yellow" href="#">OO</a></li>
+                <li><a class="topics__list__item button-link--yellow" href="#">Java</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <footer class="news">
+        <div class="news--padding">
+            <h2 class="news__tittle text--linear-background">Fique por dentro das novidades!</h2>
+            <p class="text--linear-background">Atualizações de e-books, novos livros, promoções e outros.</p>
+            
+            <input class="news__email" type="email" placeholder="Cadastre seu e-mail">
+        </div>
+
+        <p class="news__sponsorship">Grupo Alura</p>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        // SWIPER
+        const swiper = new Swiper('.swiper', {
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            slidesPerView: 3,
+
+            speed: 400,
+            spaceBetween: 25,
+
+            centerInsufficientSlides: false,
+            loop: true,
+        });
+    </script>
+</body>
+</html>
