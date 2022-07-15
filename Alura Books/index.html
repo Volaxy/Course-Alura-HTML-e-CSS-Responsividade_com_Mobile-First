@@ -17,7 +17,7 @@
     <header>
         <!-- HEADER MENU -->
         <nav class="header-menu">
-            <div>
+            <div class="mobile">
                 <svg class="header-menu__hamburguer" width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 24H36V20H0V24ZM0 14H36V10H0V14ZM0 0V4H36V0H0Z"/>
                 </svg>
@@ -39,11 +39,39 @@
                 <img class="header-menu__logo" src="Images/Logo_Icon.svg" alt="Logo do Alura Books">
             </div>
 
-            <ul class="header-menu__actions">
+            <ul class="mobile header-menu__actions">
                 <li class="header-menu__actions__item"><img src="Images/Favorites_Icon.svg" alt="ícone de favoritos"></li>
                 <li class="header-menu__actions__item"><img src="Images/Purchases_Icon.svg" alt="ícone de compras"></li>
                 <li class="header-menu__actions__item"><img src="Images/User_Icon.svg" alt="ícone de usuário"></li>
             </ul>
+
+            <!-- Width greater than 1024px -->
+            <img class="_1024px" src="Images/Logo_Text.svg" alt="Logo da Alura Books">
+
+            <nav class="_1024px">
+                <ul>
+                    <li>
+                        <h2>Categorias</h2>
+
+                        <ul>
+                            <li>Programação</li>
+                            <li>Front-End</li>
+                            <li>Infraestrutura</li>
+                            <li>Busines</li>
+                            <li>Design & UX</li>
+                        </ul>
+                    </li>
+                    
+                    <li>Favoritos</li>
+                    <li>Minha Estante</li>
+                </ul>
+            </nav>
+
+            <ul class="_1024px">
+                <li><img src="Images/Purchases_Icon.svg" alt="ícone de compras"></li>
+                <li><img src="Images/User_Icon.svg" alt="ícone de usuário"></li>
+            </ul>
+            <!------------------------------->
         </nav>
 
         <!-- HEADER INTRODUCTION -->
@@ -78,6 +106,10 @@
                         <div class="swiper-slide"><img class="swiper-slide__img" src="Images/Book_4.png" alt="Book 4"></div>
                         <div class="swiper-slide"><img class="swiper-slide__img" src="Images/Book_5.png" alt="Book 5"></div>
                     </div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="_1024px" class="swiper-button-prev"></div>
+                    <div class="_1024px" class="swiper-button-next"></div>
                 </div>
             </section>
 
@@ -120,13 +152,17 @@
                     <div class="swiper-slide"><img class="swiper-slide__img" src="Images/Book_4.png" alt="Book 4"></div>
                     <div class="swiper-slide"><img class="swiper-slide__img" src="Images/Book_5.png" alt="Book 5"></div>
                 </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="_1024px" class="swiper-button-prev"></div>
+                <div class="_1024px" class="swiper-button-next"></div>
             </div>
         </article>
 
         <!-- AUTHOR OF THE MONTH -->
         <section class="card--2columns">
             <section class="card--2columns__left-col__texts">
-                <p>
+                <p class="card--2columns__left-col__stars">
                     <img src="Images/Star_Icon.svg" alt="Estrela">
                     <img src="Images/Star_Icon.svg" alt="Estrela">
                     <img src="Images/Star_Icon.svg" alt="Estrela">
@@ -179,7 +215,124 @@
             <input class="news__email" type="email" placeholder="Cadastre seu e-mail">
         </div>
 
-        <p class="news__sponsorship">Grupo Alura</p>
+        <section class="news__sponsorship">
+            <h2 class="news__sponsorship__tittle">Grupo Alura</h2>
+
+            <nav class="_1024px">
+                <!-- EDUCATION -->
+                <ul>
+                    <h3>Educação</h3>
+
+                    <li>
+                        <a href="#">
+                            <img src="Images/Caelum.svg" alt="Logo da Caelum">
+                            <p>Caelum</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="Images/Casa_Do_Codigo.svg" alt="Logo da Casa do Código">
+                            <p>Casa do Código</p>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- ONLINE EDUCATION -->
+                <ul>
+                    <h3>Educação Online</h3>
+                    <li>
+                        <a href="#">
+                            <img src="Images/Alura.svg" alt="Logo da Alura">
+                            <p>Alura</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="Images/Alura_Empresas.svg" alt="Logo da Alura para Empresas">
+                            <p>Alura para Empresas</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="Images/Alura.svg" alt="Logo da Alura LATAM">
+                            <p>Alura LATAM</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="Images/Alura_Start.svg" alt="Logo da Alura Start">
+                            <p>Alura Start</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="Images/Music_Dot.svg" alt="Logo da MusicDot">
+                            <p>MusicDot</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="Images/Alura_Lingua.svg" alt="Logo da Alura Língua">
+                            <p>Alur Língua</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="Images/PM3.svg" alt="Logo do PM3">
+                            <p>PM3</p>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- COMMUNITY -->
+                <ul>
+                    <h3>COMMUNITY</h3>
+                    <li>
+                        <a href="#">
+                            <img src="Images/Hipsters_Tech.svg" alt="Logo do Hipsters ponto Tech">
+                            <p>Hipsters ponto Tech</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="Images/Scuba_Dev.svg" alt="Logo da Scuba Dev">
+                            <p>Scuba Dev</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="Images/Layers_Tech.svg" alt="Logo da Layers ponto Tech">
+                            <p>Layers ponto Tech</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="Images/Like_A_Boss.svg" alt="Logo da Like a Boss">
+                            <p>Like a Boss</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="Images/Carreira_Sem_Fronteira.svg" alt="Logo da Carreira sem Fronteira">
+                            <p>Carreira sem Fronteira</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="Images/Hipsters_Jobs.svg" alt="Logo da Hipsters ponto Jobs">
+                            <p>Hipsters ponto Jobs</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="Images/GUJ.svg" alt="Logo da GUJ">
+                            <p>GUJ</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
     </footer>
 
     <!-- SCRIPTS -->
