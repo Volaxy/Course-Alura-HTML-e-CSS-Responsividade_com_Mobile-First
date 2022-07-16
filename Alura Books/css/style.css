@@ -182,7 +182,7 @@ a {
                     margin: 0;
                     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 
-                    overflow: hidden;               
+                    overflow: hidden;
                 }
 
                 .header-menu__nav:hover .header-menu__submenu {
@@ -191,7 +191,7 @@ a {
 
                     position: absolute;
 
-                    z-index: 2;                    
+                    z-index: 2;
                 }
 
                     .header-menu__submenu-item:first-child h2 {
@@ -412,4 +412,234 @@ a {
     ._1024px {
         display: block;
     }
+
+    .header-menu {
+        background-color: white;
+
+        justify-content: space-around;
+        align-items: center;
+    }
+
+        .header-menu__nav {
+            flex-grow: .5;
+        }
+
+            .header-menu__list {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+                .header-menu__list__categories {
+                    position: relative;
+                }
+
+                    .header-menu__list__categories:hover .header-menu__categories__list {
+                        height: auto;
+                    }
+
+                .header-menu__list__categories-tittle {
+                    margin: 0;
+
+                    font-size: 1rem;
+                    font-weight: 400;
+                }
+
+                .header-menu__categories__list {
+                    height: 0px;
+                    background-color: white;
+
+                    position: absolute;
+                    left: 0;
+
+                    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+
+                    overflow: hidden;
+                    z-index: 2;
+                }
+
+                    .header-menu__categories__list-item:hover {
+                        background-image: var(--blue-linear-background);
+
+                        color: white;
+                    }
+
+                        .header-menu__categories__list-item__link {
+                            display: inline-block;
+                            
+                            padding: 1.5rem;
+                        }
+
+            .header-menu__list-text--padding {
+                padding: 1rem;
+            }
+
+            .header-menu__list-text--padding:hover {
+                background-image: var(--blue-linear-background);
+
+                border-radius: .2rem;
+
+                color: white;
+            }
+
+        .header-menu__actions--laptop {
+            display: flex;
+            justify-content: space-between;
+            flex-grow: .1;
+        }
+
+    /* HEADER INTRODUCTION */
+    .header-intro {
+        padding: 5rem;
+    }
+
+        .header-intro__center {
+            width: 70%;
+
+            margin: auto;
+        }
+
+            .header-intro__tittle {
+                font-size: 2rem;
+                margin-bottom: 0;
+            }
+
+            .header-intro__text {
+                width: 100%;
+
+                margin-top: 0;
+                margin-bottom: 2rem;
+            }
+
+            .header-intro__input::placeholder {
+                background-position: 22.5%;
+            }
+
+    /* MAIN CONTENT */
+    /* LAST RELEASES */
+    .main-tittle {
+        padding-top: 4rem;
+        padding-bottom: 1rem;
+
+        font-size: 1.625rem;
+    }
+
+        /* SWIPER */
+        .swiper {
+            width: 60%;
+        }
+        
+            .swiper-pagination {
+                margin-bottom: 4rem;
+            }
+
+                .swiper-pagination-bullet {
+                    width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,12px));
+                    height: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,12px));
+                }
+
+                .swiper-button {
+                    background-image: var(--blue-linear-background);
+                    width: 60px;
+                    height: 60px;
+
+                    top: 55%;
+
+                    border-radius: 50%;
+                    box-shadow: 0 0 4px black;
+                }
+
+                    .swiper-button::after {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+
+                        color: white;
+                        font-size: 1.5rem;
+                        font-weight: 700;
+
+                        transform: translate(-50%, -50%);
+                    }
+
+                .swiper-slide__img {
+                    width: 80%;
+
+                    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+                }
+
+    /* CARDS WITH 2 COLUMNS */
+    .card--2columns {
+        width: 50%;
+
+        margin: 4rem auto;
+    }
+
+    /* NEWS */
+    .news--padding {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .news__texts {
+            width: 35%;
+        }
+
+        .news__email {
+            width: 30%;
+
+            margin-left: 2.5%;
+        }
+
+        .news__sponsorship {
+            display: flex;
+            justify-content: space-between;
+
+            padding: 4rem 1.5rem;
+        }
+
+            .news__sponsorship__tittle {
+                margin: 0;
+
+                font-size: 1.5rem;
+            }
+
+            .news__sponsorship__links {
+                display: flex;
+                justify-content: space-between;
+                flex-grow: .75;
+            }
+
+                .news__sponsorship__links ul,
+                .news__sponsorship__links h3 {
+                    margin-top: 0;
+                }
+
+                .news__sponsorship__links p {
+                    margin-bottom: 0;
+                }
+
+                .news__sponsorship__links-tittle {
+                    margin-bottom: 2rem;
+
+                    color: var(--tittle-description-text);
+                    font-size: .875rem;
+                    font-weight: 400;
+                }
+
+                .news__sponsorship__links-item {
+                    line-height: 0;
+                }
+
+                    .news__sponsorship__links-item:not(:last-child) {
+                        margin-bottom: 1rem;
+                    }
+
+                    .news__sponsorship__link {
+                        display: flex;
+                    }
+
+                        .news__sponsorship__links-description {
+                            margin-left: .5rem;
+                        }
 }

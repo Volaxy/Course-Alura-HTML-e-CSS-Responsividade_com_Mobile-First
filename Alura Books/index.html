@@ -46,40 +46,41 @@
             </ul>
 
             <!-- Width greater than 1024px -->
-            <img class="_1024px" src="Images/Logo_Text.svg" alt="Logo da Alura Books">
+            <a class="_1024px" href="#"> <img src="Images/Logo_Text.svg" alt="Logo da Alura Books"> </a>
 
-            <nav class="_1024px">
-                <ul>
-                    <li>
-                        <h2>Categorias</h2>
+            <nav class="_1024px header-menu__nav">
+                <ul class="header-menu__list">
+                    <li class="header-menu__list__categories">
+                        <h2 class="header-menu__list__categories-tittle header-menu__list-text--padding">Categorias</h2>
 
-                        <ul>
-                            <li>Programação</li>
-                            <li>Front-End</li>
-                            <li>Infraestrutura</li>
-                            <li>Busines</li>
-                            <li>Design & UX</li>
+                        <ul class="header-menu__categories__list">
+                            <li class="header-menu__categories__list-item"> <a class="header-menu__categories__list-item__link" href="#">Programação</a> </li>
+                            <li class="header-menu__categories__list-item"> <a class="header-menu__categories__list-item__link" href="#">Front-End</a> </li>
+                            <li class="header-menu__categories__list-item"> <a class="header-menu__categories__list-item__link" href="#">Infraestrutura</a> </li>
+                            <li class="header-menu__categories__list-item"> <a class="header-menu__categories__list-item__link" href="#">Busines</a> </li>
+                            <li class="header-menu__categories__list-item"> <a class="header-menu__categories__list-item__link" href="#">Design & UX</a> </li>
                         </ul>
                     </li>
                     
-                    <li>Favoritos</li>
-                    <li>Minha Estante</li>
+                    <li> <a class="header-menu__list-text--padding" href="#">Favoritos</a> </li>
+                    <li> <a class="header-menu__list-text--padding" href="#">Minha Estante</a> </li>
                 </ul>
             </nav>
 
-            <ul class="_1024px">
-                <li><img src="Images/Purchases_Icon.svg" alt="ícone de compras"></li>
-                <li><img src="Images/User_Icon.svg" alt="ícone de usuário"></li>
+            <ul class="_1024px header-menu__actions--laptop">
+                <li> <img src="Images/Purchases_Icon.svg" alt="ícone de compras"> </li>
+                <li> <img src="Images/User_Icon.svg" alt="ícone de usuário"> </li>
             </ul>
             <!------------------------------->
         </nav>
 
         <!-- HEADER INTRODUCTION -->
         <section class="header-intro">
-            <h2 class="header-intro__tittle">Já sabe por onde começar?</h2>
-            <p class="header-intro__text">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
-
-            <input class="header-intro__input" type="text" placeholder="Qual será sua próxima leitura?">
+            <div class="header-intro__center">
+                <h2 class="header-intro__tittle">Já sabe por onde começar?</h2>
+                <p class="header-intro__text">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+                <input class="header-intro__input" type="text" placeholder="Qual será sua próxima leitura?">
+            </div>
         </section>
     </header>
 
@@ -108,8 +109,8 @@
                     </div>
 
                     <!-- If we need navigation buttons -->
-                    <div class="_1024px" class="swiper-button-prev"></div>
-                    <div class="_1024px" class="swiper-button-next"></div>
+                    <div class="_1024px swiper-button swiper-button-prev"></div>
+                    <div class="_1024px swiper-button swiper-button-next"></div>
                 </div>
             </section>
 
@@ -154,8 +155,8 @@
                 </div>
 
                 <!-- If we need navigation buttons -->
-                <div class="_1024px" class="swiper-button-prev"></div>
-                <div class="_1024px" class="swiper-button-next"></div>
+                <div class="_1024px swiper-button swiper-button-prev"></div>
+                <div class="_1024px swiper-button swiper-button-next"></div>
             </div>
         </article>
 
@@ -209,8 +210,10 @@
 
     <footer class="news">
         <div class="news--padding">
-            <h2 class="news__tittle text--linear-background">Fique por dentro das novidades!</h2>
-            <p class="text--linear-background">Atualizações de e-books, novos livros, promoções e outros.</p>
+            <div class="news__texts">
+                <h2 class="news__tittle text--linear-background">Fique por dentro das novidades!</h2>
+                <p class="text--linear-background">Atualizações de e-books, novos livros, promoções e outros.</p>
+            </div>
             
             <input class="news__email" type="email" placeholder="Cadastre seu e-mail">
         </div>
@@ -218,116 +221,116 @@
         <section class="news__sponsorship">
             <h2 class="news__sponsorship__tittle">Grupo Alura</h2>
 
-            <nav class="_1024px">
+            <nav class="_1024px news__sponsorship__links">
                 <!-- EDUCATION -->
                 <ul>
-                    <h3>Educação</h3>
+                    <h3 class="news__sponsorship__links-tittle">Educação</h3>
 
-                    <li>
-                        <a href="#">
+                    <li class="news__sponsorship__links-item">
+                        <a class="news__sponsorship__link" href="#">
                             <img src="Images/Caelum.svg" alt="Logo da Caelum">
-                            <p>Caelum</p>
+                            <p class="news__sponsorship__links-description">Caelum</p>
                         </a>
                     </li>
 
-                    <li>
-                        <a href="#">
+                    <li class="news__sponsorship__links-item">
+                        <a class="news__sponsorship__link" href="#">
                             <img src="Images/Casa_Do_Codigo.svg" alt="Logo da Casa do Código">
-                            <p>Casa do Código</p>
+                            <p class="news__sponsorship__links-description">Casa do Código</p>
                         </a>
                     </li>
                 </ul>
 
                 <!-- ONLINE EDUCATION -->
                 <ul>
-                    <h3>Educação Online</h3>
-                    <li>
-                        <a href="#">
+                    <h3 class="news__sponsorship__links-tittle">Educação Online</h3>
+                    <li class="news__sponsorship__links-item">
+                        <a class="news__sponsorship__link" href="#">
                             <img src="Images/Alura.svg" alt="Logo da Alura">
-                            <p>Alura</p>
+                            <p class="news__sponsorship__links-description">Alura</p>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="news__sponsorship__links-item">
+                        <a class="news__sponsorship__link" href="#">
                             <img src="Images/Alura_Empresas.svg" alt="Logo da Alura para Empresas">
-                            <p>Alura para Empresas</p>
+                            <p class="news__sponsorship__links-description">Alura para Empresas</p>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="news__sponsorship__links-item">
+                        <a class="news__sponsorship__link" href="#">
                             <img src="Images/Alura.svg" alt="Logo da Alura LATAM">
-                            <p>Alura LATAM</p>
+                            <p class="news__sponsorship__links-description">Alura LATAM</p>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="news__sponsorship__links-item">
+                        <a class="news__sponsorship__link" href="#">
                             <img src="Images/Alura_Start.svg" alt="Logo da Alura Start">
-                            <p>Alura Start</p>
+                            <p class="news__sponsorship__links-description">Alura Start</p>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="news__sponsorship__links-item">
+                        <a class="news__sponsorship__link" href="#">
                             <img src="Images/Music_Dot.svg" alt="Logo da MusicDot">
-                            <p>MusicDot</p>
+                            <p class="news__sponsorship__links-description">MusicDot</p>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="news__sponsorship__links-item">
+                        <a class="news__sponsorship__link" href="#">
                             <img src="Images/Alura_Lingua.svg" alt="Logo da Alura Língua">
-                            <p>Alur Língua</p>
+                            <p class="news__sponsorship__links-description">Alur Língua</p>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="news__sponsorship__links-item">
+                        <a class="news__sponsorship__link" href="#">
                             <img src="Images/PM3.svg" alt="Logo do PM3">
-                            <p>PM3</p>
+                            <p class="news__sponsorship__links-description">PM3</p>
                         </a>
                     </li>
                 </ul>
 
                 <!-- COMMUNITY -->
                 <ul>
-                    <h3>COMMUNITY</h3>
-                    <li>
-                        <a href="#">
+                    <h3 class="news__sponsorship__links-tittle">COMMUNITY</h3>
+                    <li class="news__sponsorship__links-item">
+                        <a class="news__sponsorship__link" href="#">
                             <img src="Images/Hipsters_Tech.svg" alt="Logo do Hipsters ponto Tech">
-                            <p>Hipsters ponto Tech</p>
+                            <p class="news__sponsorship__links-description">Hipsters ponto Tech</p>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="news__sponsorship__links-item">
+                        <a class="news__sponsorship__link" href="#">
                             <img src="Images/Scuba_Dev.svg" alt="Logo da Scuba Dev">
-                            <p>Scuba Dev</p>
+                            <p class="news__sponsorship__links-description">Scuba Dev</p>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="news__sponsorship__links-item">
+                        <a class="news__sponsorship__link" href="#">
                             <img src="Images/Layers_Tech.svg" alt="Logo da Layers ponto Tech">
-                            <p>Layers ponto Tech</p>
+                            <p class="news__sponsorship__links-description">Layers ponto Tech</p>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="news__sponsorship__links-item">
+                        <a class="news__sponsorship__link" href="#">
                             <img src="Images/Like_A_Boss.svg" alt="Logo da Like a Boss">
-                            <p>Like a Boss</p>
+                            <p class="news__sponsorship__links-description">Like a Boss</p>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="news__sponsorship__links-item">
+                        <a class="news__sponsorship__link" href="#">
                             <img src="Images/Carreira_Sem_Fronteira.svg" alt="Logo da Carreira sem Fronteira">
-                            <p>Carreira sem Fronteira</p>
+                            <p class="news__sponsorship__links-description">Carreira sem Fronteira</p>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="news__sponsorship__links-item">
+                        <a class="news__sponsorship__link" href="#">
                             <img src="Images/Hipsters_Jobs.svg" alt="Logo da Hipsters ponto Jobs">
-                            <p>Hipsters ponto Jobs</p>
+                            <p class="news__sponsorship__links-description">Hipsters ponto Jobs</p>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="news__sponsorship__links-item">
+                        <a class="news__sponsorship__link" href="#">
                             <img src="Images/GUJ.svg" alt="Logo da GUJ">
-                            <p>GUJ</p>
+                            <p class="news__sponsorship__links-description">GUJ</p>
                         </a>
                     </li>
                 </ul>
@@ -353,6 +356,12 @@
 
             centerInsufficientSlides: false,
             loop: true,
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
         });
     </script>
 </body>
