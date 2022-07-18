@@ -138,7 +138,7 @@ a {
 
 /*============================== Page - Top to Bottom ==============================*/
 /* Hidde Elements with Screen less than 1024px */
-._1024px {
+._1024px, ._1728px {
     display: none;
 }
 
@@ -410,7 +410,7 @@ a {
     }
     
     ._1024px {
-        display: block;
+        display: initial;
     }
 
     .header-menu {
@@ -428,6 +428,8 @@ a {
                 display: flex;
                 justify-content: space-evenly;
                 align-items: center;
+
+                text-transform: uppercase;
             }
 
                 .header-menu__list__categories {
@@ -458,16 +460,22 @@ a {
                     z-index: 2;
                 }
 
-                    .header-menu__categories__list-item:hover {
-                        background-image: var(--blue-linear-background);
-
-                        color: white;
+                    .header-menu__categories__list-item {
+                        color: var(--subtittle-text);
                     }
+
+                        .header-menu__categories__list-item:hover {
+                            background-image: var(--blue-linear-background);
+
+                            color: white;
+                        }
 
                         .header-menu__categories__list-item__link {
                             display: inline-block;
                             
                             padding: 1.5rem;
+
+                            text-transform: uppercase;
                         }
 
             .header-menu__list-text--padding {
